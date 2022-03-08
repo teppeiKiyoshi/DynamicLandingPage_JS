@@ -18,9 +18,9 @@ function showTime() {
   hour = hour % 12 || 12;
 
   //OUTPUT TIME
-  time.innerHTML = `${addZero(hour)}<span>:</span>${addZero(
-    min
-  )}<span>:</span>${addZero(sec)} ${ampm}`;
+  time.innerHTML = `${hour}<span>:</span>${addZero(min)}<span>:</span>${addZero(
+    sec
+  )} ${ampm}`;
 
   setTimeout(showTime, 1000);
 }
